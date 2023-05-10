@@ -175,20 +175,9 @@ const app = Vue.createApp({
 
         };
     },
+
     methods: {
-        addLastMsg(){
-            let lastMsg = this.messages.push({
-                date: 
-            })
-        } 
-        // addUser() {
-        //     this.user.unshift({
-        //         name: 'andrea',
-        //         avatar: 'img/io.jpg',
-
-        //     });
-        // }
-
+        
     },
 });
 
