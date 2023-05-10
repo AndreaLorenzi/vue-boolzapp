@@ -31,12 +31,15 @@ body {
     display: flex;
     align-items: center;
     padding-inline: 1rem;
-    padding-top: 1rem;
+    padding: .5rem;
+    justify-content: space-between;
+    background-color: #D8DBD5;
 }
 .user img {
     width: 20%;
     display: block;
     aspect-ratio: 1 / 1;
+    border-radius: 50%;
     image-rendering: inherit;
 }
 
@@ -71,6 +74,30 @@ body {
 .bell {
     padding-left: 1rem;
 }
+.scroll {
+    overflow-y: scroll;
+    height: 70%;
+}
+
+.img_avatar {
+    display: flex;
+    padding: .5rem;
+}
+
+.img_avatar img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.txt_avatar {
+    padding-top: .4rem;
+}
+
+.name {
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
 .msg {
     height: 70%;
     display: flex;

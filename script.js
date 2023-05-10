@@ -2,7 +2,7 @@ const app = Vue.createApp({
     data() {
         return {
             user: {
-                name: 'andrea',
+                name: 'Andrea Lorenzi',
                 avatar: 'img/io.jpg',
             },
             activeIndex: 0,
@@ -176,6 +176,11 @@ const app = Vue.createApp({
         };
     },
     methods: {
+        addLastMsg(){
+            let lastMsg = this.messages.push({
+                date: 
+            })
+        } 
         // addUser() {
         //     this.user.unshift({
         //         name: 'andrea',
