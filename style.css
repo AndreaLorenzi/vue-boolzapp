@@ -20,7 +20,8 @@ body {
     width: 70%;
     background-color: white;
     display: flex;
-    position: absolute
+    margin: auto;
+    
 }
 
 .user_bar {
@@ -32,17 +33,17 @@ body {
     display: flex;
     align-items: center;
     padding-inline: 1rem;
-    padding: .5rem;
+    padding: .3rem;
     justify-content: space-between;
-    background-color: #D8DBD5;
-    height: 10%;
+    background-color: #eaeaea;
+    height: 8%;
 }
 .user img {
     width: 60px;
     display: block;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    image-rendering: inherit;
+
 }
 
 .emoticon i {
@@ -59,7 +60,7 @@ body {
 }
 .notification {
     background-color: #8EDAFC;
-    height: 10%;
+    height: 7%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -75,27 +76,27 @@ body {
 }
 .scroll {
     overflow-y: scroll;
-    height: 75%;
+    height: 79%;
 }
 .chat_users{
     display: flex;
-    padding-bottom: .5rem;
+    padding-bottom: .4rem;
 }
 .img_avatar {
     display: flex;
-    padding: .5rem;
+    padding: .4rem;
 }
 
 .img_avatar img {
-    width: 60px;
+    width: 20%;
     border-radius: 50%;
 }
 
 .txt_avatar {
-    padding-top: .4rem;
+    padding-top: .3rem;
     display: flex;
     position: relative;
-    width: 250px;
+    width: 70%;
     
 }
 
@@ -104,6 +105,7 @@ body {
     padding-left: 1rem;
 }
 .date{
+    width: 10%;
     font-size: .3rem;
 }
 .last_msg{
@@ -113,34 +115,43 @@ body {
     padding-left: 1rem;
 }
 .chat_head{
-    top: 0;
-    height: 10%;
-    background-color: #D8DBD5;
+    height: 8%;
+    background-color: #eaeaea;
     border-left: 1px solid rgb(27, 27, 27);
 }
 .msg {
     height: 85%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    overflow-y: scroll;
 }
 
 .msg .chat {
-    height: 2rem;
-    width: 8rem;
+    max-width: 60%;
     border-radius: 5px;
+    margin: 1rem;
 }
 
 .msg .green {
     background-color: #4af805b9;
+    align-self: end;
 }
 
 .msg .white {
     background-color: white;
+    align-self: start;
+}
+.chat .chat_text {
+    padding: .8em;
+    font-size: .8rem;
 }
 
+.chat .chat_text .chat_date {
+    font-size: .6rem;
+}
 .controls {
-    background-color: #D8DBD5;
-    height: 5%;
+    background-color: #eaeaea;
+    height: 8%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -154,9 +165,9 @@ body {
 
 .controls input {
     width: 80%;
-    height: 80%;
+    height: 60%;
     border-radius: 10px;
 }
 .input-group{
-    height: 5%%;
+    height: 6%;
 }
