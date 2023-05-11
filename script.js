@@ -177,7 +177,9 @@ const app = Vue.createApp({
     },
 
     methods: {
-        
+        setActiveIndex(index) {
+            this.activeIndex = index;
+        },
     },
 });
 
