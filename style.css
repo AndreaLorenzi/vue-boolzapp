@@ -105,8 +105,9 @@ body {
     padding-left: 1rem;
 }
 .date{
+    align-self: center;
     width: 10%;
-    font-size: .3rem;
+    font-size: .4rem;
 }
 .last_msg{
     font-size: .7rem;
@@ -149,11 +150,23 @@ body {
 .msg .green {
     background-color: #4af805b9;
     align-self: end;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 .msg .white {
     background-color: white;
     align-self: start;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.date_message{
+    align-self: center;
+    width: 10%;
+    font-size: .4rem;
+    padding-right: .5rem;
 }
 .chat .chat_text {
     padding: .8em;
