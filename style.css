@@ -114,6 +114,10 @@ body {
     position: absolute;
     bottom: 0;
     padding-left: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
 }
 .chat_head{
     display: flex;

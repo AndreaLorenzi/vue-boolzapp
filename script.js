@@ -195,8 +195,11 @@ const app = Vue.createApp({
                 message: 'non sono che dirti',
                 status: ' received',
             };
-            this.contacts[this.activeIndex].messages.push(pcRisp)
-        }
+            this.contacts[this.activeIndex].messages.push(pcRisp);
+        },
+        filteredContact(filter) {
+            this.contacts.filter(contact => contact.name.includes(filter));
+        },
     },
 });
 
