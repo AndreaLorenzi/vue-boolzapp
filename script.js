@@ -187,6 +187,15 @@ const app = Vue.createApp({
                 status: 'sent',
             }
             this.contacts[this.activeIndex].messages.push(newMex)
+            setTimeout(this.pcMessage, 2000);
+        },
+        pcMessage(){
+            let pcRisp = {
+                date: ' 11/05/23 12.00',
+                message: 'non sono che dirti',
+                status: ' received',
+            };
+            this.contacts[this.activeIndex].messages.push(pcRisp)
         }
     },
 });
