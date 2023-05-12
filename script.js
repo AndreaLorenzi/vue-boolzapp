@@ -8,6 +8,7 @@ const app = Vue.createApp({
             activeIndex: 0,
             newMessage: '',
             searchStr: '',
+            dateNow: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -177,8 +178,8 @@ const app = Vue.createApp({
     },
 
     methods: {
-        setActiveIndex(index) {
-            this.activeIndex = index;
+        activeChat(index) {
+            this.activeIndex = this.contacts.indexOf(index);
         },
         addMessage(newMsg){
             let newMex = {
@@ -186,7 +187,8 @@ const app = Vue.createApp({
                 message: newMsg,
                 status: 'sent',
             }
-            this.contacts[this.activeIndex].messages.push(newMex)
+            this.contacts[this.activeIndex].messages.push(newMex);
+            this.newMessage = '';
             setTimeout(this.pcMessage, 2000);
         },
         pcMessage(){
@@ -197,9 +199,20 @@ const app = Vue.createApp({
             };
             this.contacts[this.activeIndex].messages.push(pcRisp);
         },
-        filteredContact(filter) {
-            this.contacts.filter(contact => contact.name.includes(filter));
+        returnDate(dateNow) {
+            return luxon.DateTime.now(dateNow).toFormat('dd/MM/yyyy HH:mm:ss');
         },
+        deleteMsg(i){
+            this.contacts[this.activeIndex].messages.splice(i ,1)
+        },
+    },
+    computed:{
+        filter() {
+            return this.contacts.filter((contacts) => {
+                return contacts.name.toLowerCase().includes(this.searchStr.toLowerCase());
+            },
+
+        )},
     },
 });
 
