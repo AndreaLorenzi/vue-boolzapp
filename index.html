@@ -85,6 +85,7 @@
                     <div class="chat" v-for="(message, i) in contacts[activeIndex].messages" :class="message.status == 'sent' ? 'green': 'white'" :key="message">
                         <div class="xd">
                             {{ message.message }}
+                            <span class="date_message">{{message.date.slice(11, 16) }}</span>
                             <div class="dropdown">
                                 <i class="fa-solid fa-chevron-down " type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
 
@@ -93,7 +94,7 @@
                                     <li><a class="dropdown-item" href="#" @click="deleteMsg(i)">delete</a></li>
                                 </ul>
                             </div>
-                            <span class="date_message">{{message.date.slice(11, 16) }}</span>
+                            
                         </div>
                         
                         
