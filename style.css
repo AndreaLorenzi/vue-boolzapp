@@ -112,6 +112,12 @@ body {
     padding-left: 1rem;
     width:70%;
 }
+.date_now{
+    align-self: center;
+    
+    font-size: .6rem;
+    display: flex;
+}
 .date{
     align-self: center;
     width: 20%;

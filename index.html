@@ -68,9 +68,11 @@
             <div class="chat_head">
                 <div class="xd">
                     <img :src="contacts[activeIndex].avatar" alt="">
-                    <div class="name">{{ contacts[activeIndex].name }}</div>
+                    <div class="name">{{ contacts[activeIndex].name }}
+                        <div class="date_now">{{ returnDate(dateNow) }}</div>
+                    </div>
                 </div>
-                <div class="date">{{ returnDate(dateNow) }}</div>
+                
                 <div class="emoticon">
                     <i class="bi bi-circle"></i>
                     <i class="fa-solid fa-message"></i>
